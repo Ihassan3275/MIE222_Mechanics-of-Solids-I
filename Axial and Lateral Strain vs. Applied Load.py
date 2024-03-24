@@ -1,3 +1,8 @@
+__author__ = "Ibrahim Hassan"
+__copyright__ = "Copyright (C) 2024 Ibrahim Hassan"
+__license__ = "Public Domain"
+__version__ = "1.0"
+
 import matplotlib.pyplot as plt
 import numpy as np
 from scipy.stats import linregress
