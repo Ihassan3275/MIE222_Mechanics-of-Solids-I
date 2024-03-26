@@ -39,8 +39,8 @@ lateral_line, = plt.plot(load_values_corrected, lateral_fit_line(load_values_cor
 plt.text(0.6, 0.0004, 'y={:.6e}x+{:.6e}'.format(lateral_slope, lateral_intercept), color='red')
 
 # Set labels and title
-plt.xlabel("Applied Load (N)")
-plt.ylabel("Strain")
+plt.xlabel("Applied Load, P (N)")
+plt.ylabel("Strain, ε")
 plt.title("Axial and Lateral Strain vs. Applied Load")
 
 # Adjust the axis to fit the data
