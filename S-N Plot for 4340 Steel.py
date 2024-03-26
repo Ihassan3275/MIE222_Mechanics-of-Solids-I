@@ -1,8 +1,9 @@
 __author__ = "Ibrahim Hassan"
 __copyright__ = "Copyright (C) 2024 Ibrahim Hassan"
 __license__ = "Public Domain"
-__version__ = "1.0"
+__version__ = "1.1"
 __date__ = "3/13/2024"
+__updated__ = "3/26/2024"
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -22,6 +23,8 @@ N_notched = 7957 # lab calculated value
 S_notched = a * (2*N_notched)**b
 N_dogbone = 29866 # lab calculated value
 S_dogbone = a * (2*N_dogbone)**b
+
+fatigue_limit = 180  # fatigue limit for Steel 4340.
 
 # Find the intersection point (approximately)
 intersection_indices = np.where(S < fatigue_limit)[0]
