@@ -67,6 +67,7 @@ plt.text(fracture_point['strain'] - 0.15, fracture_point['stress'] - 5000, "Frac
 
 # Manually add a triangle for Modulus of Elasticity (E)
 # Define the points for the triangle
+# Adjust points according to your estimated or calculated values of linear curve
 point1 = (0.0027, 40185.9380)
 point2 = (0.0027, 10000)
 point3 = (0.0001, 10000)
@@ -78,11 +79,26 @@ draw_triangle(point1, point2, point3)
 e_position = (0.004, 24000)  # Adjust these values as needed
 
 # Add the letter 'E' to the plot
-plt.text(*e_position, 'E = Modulus of Elasticity', fontsize=12, color='b')
+plt.text(*e_position, 'E = Modulus of Elasticity', fontsize=11, color='b')
+# Adjust fontsize as needed
+
+# Define the position for the letter 'E'
+e_val_position = (0.01105, 18500)  # Adjust these values as needed
+
+# Add value of E manually
+plt.text(*e_val_position, '= 14,883,680 kPa', fontsize=11, color='b')
 # Adjust fontsize as needed
 
 # Add a red solid line to indicate 0.2% offset
 plt.plot([0.002, yield_point['strain']], [0, yield_point['stress']], 'r-', label='0.2% Offset')
+
+# Define the position for offset value
+offset_val_position = (0.004, 1000)
+# Adjust these values as needed
+
+# Add value of E manually
+plt.text(*offset_val_position, '(0.002)', fontsize=11, color='r')
+# Adjust fontsize as needed
 
 plt.legend()
 plt.grid(True)
