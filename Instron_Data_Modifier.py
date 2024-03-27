@@ -11,6 +11,7 @@ import pandas as pd
 
 # Load the data
 # Change file name as needed
+# Make sure the first line in the .txt file is the first data point (remove all extra info at the start of original file)
 data = pd.read_csv('GROUP10.txt', sep="\s+", header=None)
 
 # Acknowledge the 2nd column value in the first row as a zero point
